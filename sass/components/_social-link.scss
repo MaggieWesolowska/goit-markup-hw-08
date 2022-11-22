@@ -1,0 +1,28 @@
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform $trans;
+
+  &:hover,
+  &:focus {
+    background-color: $accentC;
+  }
+  &:hover .social-link__icon--grey,
+  &:focus .social-link__icon--grey {
+    fill: #fff;
+  }
+}
+
+.social-link__icon--grey {
+  fill: $iconC;
+  transition: fill $trans;
+}
+
+.social-link__icon--white {
+  fill: #fff;
+}
+

@@ -1,0 +1,29 @@
+.modal-checkbox__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+  transform: translateY(4px);
+  border: solid 2px $brandC;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $greyC;
+}
+.modal-checkbox__input:checked + .modal-checkbox__box {
+  background-color: $accentC;
+  border-color: $accentC;
+}
+.modal-checkbox {
+  display: flex;
+  align-items: flex-start;
+}

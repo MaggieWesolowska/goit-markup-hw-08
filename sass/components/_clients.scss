@@ -1,0 +1,35 @@
+.clients {
+    padding-top: 94px;
+  }
+
+  .clients__accent {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+
+  .clients__accent .clients__icon {
+    fill: $iconC;
+    border: 1px solid $iconC;
+    border-radius: 4px;
+    transition-property: fill, border-color, transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    // .clients__icon
+    &:hover,
+    &:focus {
+      border-color: $accentC;
+    }
+  }
+
+  .clients__link:hover .clients__icon,
+  .clients__link:focus .clients__icon {
+    fill: $accentC;
+    transform: scale(1.1);
+  }
+  

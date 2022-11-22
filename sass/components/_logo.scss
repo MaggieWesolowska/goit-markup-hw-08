@@ -1,0 +1,28 @@
+.logo {
+  font-family: $secondF;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color $trans;
+
+  &:hover,
+  &:focus {
+    color: $accentC;
+  }
+}
+.logo--dark {
+  color: inherit;
+  margin-right: 93px;
+}
+
+.logo--white {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.logo__title {
+  color: $accentC;
+}

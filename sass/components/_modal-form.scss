@@ -1,0 +1,92 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-form__title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.modal-form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $greyC;
+  padding-top: 10px;
+  margin-bottom: 4px;
+}
+.modal-form__box {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+.modal-form__box .modal-form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding: 13px 42px;
+  font-size: 12px;
+  transition: border-color $trans;
+}
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  pointer-events: none;
+  transition: fill $trans;
+}
+.modal-form__box {
+  & .modal-form__input:hover,
+  & .modal-form__input:focus {
+    border-color: $accentC;
+  }
+
+  & .modal-form__input:hover + .modal-form__icon,
+  & .modal-form__input:focus + .modal-form__icon {
+    fill: $accentC;
+  }
+}
+.modal-form__textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.16;
+  transition: border-color $trans;
+
+  &:hover,
+  &:focus {
+    border-color: $accentC;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.modal-form__btn {
+  display: block;
+  padding: 10px 80px;
+  background: $accentC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  color: #fff;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
