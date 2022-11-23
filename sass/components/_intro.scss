@@ -1,3 +1,70 @@
+.intro__title {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.intro__btn {
+  display: block;
+  padding: 10px 41px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.87;
+  background: $accentC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      padding: 94px 0;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(./../images/intro/intro-img.jpg);
+      background-size: 480px 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 600px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 94px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./../images/intro/intro-img-tablet.jpg);
+    background-size: 768px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
 .intro {
     display: flex;
     flex-direction: column;
@@ -8,37 +75,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./../images/Img-overlay.jpg);
+      url(./../images/intro/intro-img-laptop.jpg);
     background-size: cover;
     background-position: center;
     height: 600px;
   }
   .intro__title {
-    display: block;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
   }
-  .intro__btn {
-    display: block;
-    padding: 10px 41px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Roboto", sans-serif;
-    cursor: pointer;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.87;
-    background: $accentC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-  }
+}
