@@ -39,7 +39,7 @@
 .header__item:focus .header__icon {
   fill: $accentC;
 }
-@media screen and (min-width: 320px){
+@media screen and (min-width: 480px){
   .header__contacts {
     display: none;
   }
