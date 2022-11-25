@@ -1,5 +1,5 @@
 .nav {
-    display: flex;
+    display: none;
     gap: 46px;
     justify-content: flex-start;
     font-weight: 500;
@@ -8,6 +8,7 @@
     letter-spacing: 0.03em;
     list-style-type: none;
     flex-grow: 1;
+    align-items: center;
   }
   .nav__link {
     position: relative;
@@ -30,13 +31,17 @@
       height: 4px;
       background: $accentC;
       border-radius: 2px;
+      transform: translateY(35px);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .nav__link--active::after {
       transform: translateY(26px);
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 767px){
-    .nav {
-      display: none;
-    }
-  }
-  
-  

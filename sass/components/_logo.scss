@@ -15,7 +15,6 @@
 
 .logo--dark {
   color: inherit;
-  margin-right: 93px;
 }
 
 .logo--white {
@@ -27,13 +26,11 @@
 .logo__title {
   color: $accentC;
 }
-//for tablet -> the same as for mobile//
-// @media screen and (min-width: 768px) {
-//   .logo {
-//     font-size: 24px;
-//     line-height: 1.167;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .logo--dark {
+    margin-right: 93px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;

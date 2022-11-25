@@ -6,12 +6,14 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
+  padding: 8px 0;
 }
 .header__index {
   display: flex;
   align-items: center;
 }
 .header__contacts {
+  display: none;
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
@@ -24,6 +26,7 @@
   color: inherit;
   text-decoration: none;
   transition: color $trans;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -39,28 +42,29 @@
 .header__item:focus .header__icon {
   fill: $accentC;
 }
-@media screen and (min-width: 480px){
-  .header__contacts {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
+
+@media screen and (min-width: 768px){
   .header__body {
-    height: 80px;
-    padding-top: 15px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .header__contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-}
+  .mobile-menu-btn {
+    display: none;
+  }
+  }
+
 @media screen and (min-width: 1200px) {
 .header__body {
   padding-top: 13px;
+  padding-bottom: 0;
 }
 .header__contacts {
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 }

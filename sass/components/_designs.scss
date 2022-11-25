@@ -3,9 +3,12 @@
   }
   .designs__item {
     position: relative;
+    width: 100%;
   }
   .designs__image {
     display: block;
+    width: 100%;
+    object-fit: cover;
   }
   .designs__accent {
     position: absolute;
@@ -23,3 +26,8 @@
     align-items: center;
     background: rgba(47, 48, 58, 0.8);
   }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .designs {
+    display: none
+  }
+}
