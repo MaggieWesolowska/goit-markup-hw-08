@@ -36,7 +36,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 .team__image {
   transition: transform 1s ease-in-out;
 
@@ -45,4 +44,14 @@
     transform: scale(1.1);
   }
 }
-
+@media screen and (min-width: 768px) {
+.team__gallery {
+  flex-basis: calc((100% - 30px)/2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__gallery {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

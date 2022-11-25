@@ -246,6 +246,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -253,6 +257,15 @@ img {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .social-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,6 +772,21 @@ img {
           transform: scale(1.1);
 }
 
+@media screen and (min-width: 768px) {
+  .team__gallery {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .clients {
   padding-top: 94px;
 }

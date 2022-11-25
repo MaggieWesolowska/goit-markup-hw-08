@@ -378,19 +378,34 @@
       <!-- DESIGNS END -->
 
       <!-- TEAM  -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="main-title">Our Team</h2>
           <ul class="main-images">
             <li class="team__gallery">
               <div class="team__accent">
-                <img
+                <!-- <img
                   class="team__image"
-                  src="./images/img-3.jpg"
+                  src="./images/Team/team1.jpg"
                   alt="John Doe1"
-                  width="270"
-                  height="260"
-                />
+                  width="450"
+                  height="460"
+                /> -->
+                <picture>
+                  <source media="(min-width: 320px) and (min-device-pixel-ratio: 2)" sizes="(max-width: 450px)"
+                  srcset="./images/Team/team1@2x.jpg">
+                  <img class="team__image"
+                  src="./images/Team/team1.jpg"
+                  alt="John Doe1" width="450" height="460">
+                  <source media="(min-width: 768px) and (min-device-pixel-ratio: 2)"
+                  srcset="./images/Team/team1-tablet@2x.jpg">
+                  <img class="team__image"
+                  src="./images/Team/team1-tablet.jpg">
+                  <source media="(min-width: 1200px) and (min-device-pixel-ratio: 2)"
+                  srcset="./images/Team/team1-laptop@2x.jpg">
+                  <img class="team__image"
+                  src="./images/Team/team1-laptop@2x.jpg">
+                </picture>
               </div>
               <h3 class="team__title">John Doe</h3>
               <p class="team__subtitle">Product Designer</p>
@@ -638,7 +653,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- TEAM ENDS  -->
 
       <!-- CLIENTS  -->
