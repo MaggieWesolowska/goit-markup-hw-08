@@ -123,11 +123,12 @@ img {
 
 .mobile-menu__list-nav {
   list-style-type: none;
+  margin-bottom: 302px;
 }
 
 .mobile-menu__btn-close {
   position: absolute;
-  background-color: none;
+  background-color: #fff;
   border: none;
   right: 10px;
   top: 10px;
@@ -135,9 +136,7 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-menu__btn-close:hover,
-.mobile-menu__btn-close:focus {
+.mobile-menu__btn-close:hover, .mobile-menu__btn-close:focus {
   fill: #2196F3;
 }
 
@@ -150,12 +149,20 @@ img {
   list-style-type: none;
 }
 
+.mobile-menu__link-nav--accent {
+  color: #2196F3;
+}
+
 .mobile-menu__item-nav:not(:last-child) {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+
+.mobile-menu__list-contact {
+  list-style-type: none;
 }
 
 .mobile-menu__link-contact-tel {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
