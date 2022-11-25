@@ -7,7 +7,8 @@
   visibility: hidden;
   pointer-events: none;
   transform: translateX(100%);
-  transition: transform $trans, opacity $trans, visibility $trans;
+  transition: transform $trans, opacity $trans,
+    visibility $trans;
   background-color: #fff;
 }
 .mobile-menu__overlay.is-open {
@@ -41,11 +42,11 @@
   cursor: pointer;
   transition: fill $trans;
 
-    &:hover, 
-    &:focus {
+  &:hover,
+  &:focus {
     fill: $accentC;
-    }
   }
+}
 .mobile-menu__link-nav {
   font-weight: 500;
   font-size: 40px;
@@ -54,7 +55,7 @@
   color: $brandC;
   list-style-type: none;
 }
-.mobile-menu__link-nav--accent {
+.mobile-menu__link-nav--active {
   color: $accentC;
 }
 .mobile-menu__item-nav:not(:last-child) {
@@ -111,7 +112,8 @@
 .mobile-menu-btn__icon {
   transition: fill $trans;
 }
-.mobile-menu-btn__icon:hover, .mobile-menu-btn__icon:focus {
+.mobile-menu-btn__icon:hover,
+.mobile-menu-btn__icon:focus {
   fill: $accentC;
 }
 @media screen and (min-width: 768px) {
