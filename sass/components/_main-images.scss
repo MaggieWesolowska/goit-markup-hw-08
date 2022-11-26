@@ -1,7 +1,6 @@
 .main-images {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     list-style-type: none;
     gap: 30px;
   }
@@ -9,6 +8,14 @@
   @media screen and (min-width: 768px) {
     .main-images {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row; 
+      flex-wrap: wrap; 
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .main-images {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
     }
   }

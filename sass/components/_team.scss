@@ -44,14 +44,24 @@
     transform: scale(1.1);
   }
 }
+.team__image .team__gallery {
+  max-width: 450px;
+  height: 460px;
+  display: block;
+  object-fit: cover;
+}
 @media screen and (min-width: 768px) {
-.team__gallery {
+ .team__gallery {
   flex-basis: calc((100% - 30px)/2);
-  }
+ }
+ .team__image {
+  max-width: 354px;
+  max-height: 374px;
+ }
 }
 @media screen and (min-width: 1200px) {
-  .team__gallery {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+ .team_image {
+  max-width: 270px;
+  height: 260px;
+ }
 }
