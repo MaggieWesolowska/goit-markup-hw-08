@@ -22,7 +22,12 @@
       border-color: $accentC;
     }
   }
-
+  .clients__item {
+    flex-basis: calc((100% - 30px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .clients__link:hover .clients__icon,
   .clients__link:focus .clients__icon {
     fill: $accentC;
@@ -30,13 +35,17 @@
   }
 
   @media screen and (min-width: 768px) {
-    .clients__accent {
+    .clients__item {
       flex-basis: calc((100% - 60px)/3);
     }
   }
   @media screen and (min-width: 1200px) {
     .clients {
       padding: 94px 0;
+    }
+    .clients__accent {
+      display: flex;
+      flex-wrap: nowrap; 
     }
   }
   

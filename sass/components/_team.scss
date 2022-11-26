@@ -44,7 +44,7 @@
     transform: scale(1.1);
   }
 }
-.team__image .team__gallery {
+.team__image {
   max-width: 450px;
   height: 460px;
   display: block;
@@ -56,14 +56,14 @@
  }
  .team__image {
   max-width: 354px;
-  max-height: 374px;
+  height: 374px;
  }
 }
 @media screen and (min-width: 1200px) {
   .team {
     padding: 94px 0;
   }
-  .team_image {
+  .team__image {
   max-width: 270px;
   height: 260px;
  }
