@@ -1,7 +1,7 @@
 .assets__index {
     justify-content: space-between;
     list-style-type: none;
-    padding: 0 15px;
+    padding: 60px 0;
     gap: 30px;
     display: flex;
 }
@@ -59,6 +59,7 @@
     .assets__index {
       display: flex;
       flex-wrap: nowrap;
+      padding: 94px 0;
     }
     .assets__title {
       display: block;

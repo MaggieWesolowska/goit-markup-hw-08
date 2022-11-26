@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 94px 15px;
+  padding: 60px 0;
   background-color: $whiteC;
 }
 .team__gallery {
@@ -60,7 +60,10 @@
  }
 }
 @media screen and (min-width: 1200px) {
- .team_image {
+  .team {
+    padding: 94px 0;
+  }
+  .team_image {
   max-width: 270px;
   height: 260px;
  }
