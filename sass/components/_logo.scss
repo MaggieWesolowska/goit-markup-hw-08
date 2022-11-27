@@ -31,7 +31,9 @@
   .logo--dark {
     margin-right: 93px;
   }
-  
+  .logo--white {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -40,7 +42,6 @@
   }
   .logo--white {
     display: inline-block;
-    color: #fff;
-    margin-bottom: 20px;
+    padding-top: 60px;
   }
 }

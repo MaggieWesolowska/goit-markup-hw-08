@@ -22,9 +22,8 @@
     }
   }
   .clients__item {
-    flex-basis: calc((100% - 30px)/2);
     display: flex;
-    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px)/2);
     justify-content: center;
   }
   .clients__link:hover .clients__icon,

@@ -25,11 +25,18 @@
     transform: scale(1.1);
   }
 }
+@media screen and (min-width: 768px) {
+  
+}
+
 @media screen and (min-width: 1200px) {
   .footer-tabs__title {
     display: block;
+    padding-top: 72px;
   }
   .footer-tabs {
+    display: flex;
     padding-left: 70px;
+    padding-bottom: 70px;
   }
 }
