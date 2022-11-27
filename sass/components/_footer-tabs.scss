@@ -1,6 +1,7 @@
 .footer-tabs__title {
   color: #fff;
-  display: block;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -12,7 +13,6 @@
 .footer-tabs {
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
 }
 
 .footer-tabs__link {
@@ -23,5 +23,13 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tabs__title {
+    display: block;
+  }
+  .footer-tabs {
+    padding-left: 70px;
   }
 }

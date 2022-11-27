@@ -1,5 +1,5 @@
 .footer__sidebar {
-    margin-left: 78px;
+    margin-left: 78px; 
   }
   .footer-sidebar__group {
     display: flex;
@@ -53,4 +53,14 @@
   }
   .footer-sidebar__icon {
     fill: #fff;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer__sidebar {
+      margin-left: 78px;
+    }
+    .footer-sidebar__group {
+      display: flex;
+      gap: 12px;
+    }
   }
