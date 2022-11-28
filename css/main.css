@@ -744,7 +744,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  width: 100%;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,11 +934,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  padding: 94px 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .filters__btn {
@@ -968,6 +968,22 @@ img {
           transform: scale(1.1);
 }
 
+@media screen and (min-width: 768px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding: 94px 50px;
+  }
+}
 .portfolio__gallery {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
