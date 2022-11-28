@@ -1,7 +1,8 @@
+
 .modal-window {
     position: relative;
     box-sizing: border-box;
-    max-width: 528px;
+    max-width: 450px;
     width: 100%;
     background: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -29,5 +30,12 @@
   }
   .modal-window__icon {
     transition: fill $trans;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .modal-window {
+    max-width: 528px;
+    width: 100%;
+    }
   }
   

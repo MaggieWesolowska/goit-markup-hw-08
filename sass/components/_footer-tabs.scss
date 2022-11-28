@@ -26,7 +26,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  
+  .footer-tabs {
+    display: block;
+    padding-bottom: 60px
+  }
 }
 
 @media screen and (min-width: 1200px) {

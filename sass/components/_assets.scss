@@ -38,8 +38,8 @@
     justify-content: center;
     align-items: center;
   }
-  .assets__accent:not(:first-child) {
-    margin-top: 30px;
+  .assets__accent:first-of-type {
+    margin-top: 0px;
   }
   @media screen and (min-width: 320px) {
     .assets__index {
