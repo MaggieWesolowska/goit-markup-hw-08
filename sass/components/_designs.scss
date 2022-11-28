@@ -7,7 +7,7 @@
   }
   .designs__image {
     display: block;
-    width: 100%;
+    max-width: 370px;
     object-fit: cover;
   }
   .designs__accent {

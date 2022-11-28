@@ -7,7 +7,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 .footer-tabs {
@@ -27,15 +27,18 @@
 }
 @media screen and (min-width: 768px) {
   .footer-tabs {
-    display: block;
-    padding-bottom: 90px
+    display: flex;
+
+  }
+  .footer-tabs__title {
+    padding-top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-tabs__title {
     display: block;
-    padding-top: 72px;
+    padding-top: 70px;
   }
   .footer-tabs {
     display: flex;
