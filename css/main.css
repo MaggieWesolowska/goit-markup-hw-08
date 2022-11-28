@@ -724,6 +724,7 @@ img {
 .designs__item {
   position: relative;
   width: 100%;
+  height: 294px;
 }
 
 .designs__image {
