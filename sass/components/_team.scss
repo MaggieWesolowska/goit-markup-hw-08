@@ -52,6 +52,7 @@
 @media screen and (min-width: 768px) {
  .team__gallery {
   flex-basis: calc((100% - 30px)/2);
+  display: block;
  }
  .team__image {
   max-width: 354px;
@@ -74,5 +75,8 @@
  }
  .team__accent {
   height: 260px;
+ }
+ .team__subtitle {
+  padding-bottom: 18px;
  }
 }

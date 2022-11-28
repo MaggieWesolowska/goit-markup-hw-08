@@ -309,12 +309,15 @@ img {
   list-style-type: none;
   padding-left: 0;
   gap: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 24px;
 }
 
 @media screen and (min-width: 1200px) {
   .social-tabs {
     padding-bottom: 30px;
+  }
+  .team__gallery {
+    height: 428px;
   }
 }
 .social-link {
@@ -824,6 +827,7 @@ img {
   .team__gallery {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    display: block;
   }
   .team__image {
     max-width: 354px;
@@ -846,6 +850,9 @@ img {
   }
   .team__accent {
     height: 260px;
+  }
+  .team__subtitle {
+    padding-bottom: 18px;
   }
 }
 .clients {
@@ -1200,7 +1207,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer-tabs {
     display: block;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
