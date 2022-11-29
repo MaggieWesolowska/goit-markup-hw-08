@@ -46,8 +46,10 @@
 }
 @media screen and (min-width: 768px) {
   .footer__body {
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-around;
   }
   .footer__group {
     display: flex;

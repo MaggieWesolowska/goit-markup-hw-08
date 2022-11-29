@@ -62,11 +62,6 @@
     fill: #fff;
   }
   @media screen and (min-width: 768px) {
-    .footer__body {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around
-    }
     .footer-sidebar__label {
       display: block;
       max-width: 450px;
