@@ -621,7 +621,6 @@ img {
           justify-content: space-between;
   list-style-type: none;
   padding: 60px 0;
-  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +645,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-color);
-  padding-bottom: 30px;
 }
 
 .assets__icon {
@@ -681,6 +679,10 @@ img {
   margin-top: 0px;
 }
 
+.assets__item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
 @media screen and (min-width: 320px) {
   .assets__index {
     display: block;
@@ -694,6 +696,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 0;
   }
   .assets__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -708,10 +711,14 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 94px 0;
+    gap: 30px;
   }
   .assets__title {
     display: block;
     text-align: left;
+  }
+  .assets__item:not(:last-child) {
+    padding-bottom: 0;
   }
 }
 .designs__gallery {
