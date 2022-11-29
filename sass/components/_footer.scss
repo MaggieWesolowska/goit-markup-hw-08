@@ -47,6 +47,7 @@
 @media screen and (min-width: 768px) {
   .footer__body {
     flex-direction: row;
+    align-items: flex-start;
   }
   .footer__group {
     display: flex;
@@ -63,6 +64,7 @@
   .footer__group {
     display: flex;
     align-items: flex-start;
+    padding-bottom: 0;
   }
   .footer__index {
     display: block;

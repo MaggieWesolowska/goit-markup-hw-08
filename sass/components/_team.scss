@@ -12,6 +12,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+  width: 100%;
 }
 .team__title {
   padding: 30px 15px;
@@ -32,13 +33,12 @@
   text-align: center;
 }
 .team__accent {
-  height: 460px;
   width: 100%;
   overflow: hidden;
 }
 .team__image {
-  max-width: 450px;
-  height: 460px;
+  width: 100%;
+  height: auto;
   display: block;
   object-fit: cover;
   transition: transform 1s ease-in-out;
@@ -54,28 +54,11 @@
   flex-basis: calc((100% - 30px)/2);
   display: block;
  }
- .team__image {
-  max-width: 354px;
-  height: 374px;
- }
- .team__accent {
-  height: 374px;
- }
 }
 @media screen and (min-width: 1200px) {
   .team {
     padding: 94px 0;
   }
-  .team__gallery {
-    height: 428px;
-  }
-  .team__image {
-  max-width: 270px;
-  height: 260px;
- }
- .team__accent {
-  height: 260px;
- }
  .team__subtitle {
   padding-bottom: 18px;
  }
