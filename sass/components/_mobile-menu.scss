@@ -11,13 +11,24 @@
     visibility $trans;
   background-color: #fff;
 }
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.mobile-menu-btn__icon {
+  transition: fill $trans;
+}
+.mobile-menu-btn__icon:hover,
+.mobile-menu-btn__icon:focus {
+  fill: $accentC;
+}
 .mobile-menu__overlay.is-open {
   transform: translateX(0);
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
 }
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -104,18 +115,6 @@
   display: flex;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.mobile-menu-btn {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-.mobile-menu-btn__icon {
-  transition: fill $trans;
-}
-.mobile-menu-btn__icon:hover,
-.mobile-menu-btn__icon:focus {
-  fill: $accentC;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
