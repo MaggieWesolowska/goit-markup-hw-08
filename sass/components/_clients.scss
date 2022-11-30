@@ -13,6 +13,11 @@
     transition: fill, transform;
     transition-duration: 1s; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // .clients__icon
+    & {
+      width: 100%;
+    }
   }
   .clients__link {
     display: flex;
