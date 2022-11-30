@@ -1,4 +1,6 @@
 .assets__index {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     padding: 60px 0;
@@ -17,9 +19,8 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--grey-color);
+    color: $greyC;
   }
-
   .assets__icon {
     transition: transform 0.5s ease-in-out;
       
@@ -44,16 +45,8 @@
   .assets__item:not(:last-child) {
     padding-bottom: 30px;
   }
-  @media screen and (min-width: 320px) {
-    .assets__index {
-      display: block;
-      padding: 60px 0;
-    }
-  }
   @media screen and (min-width: 768px) {
     .assets__index {
-      display: flex;
-      flex-wrap: wrap;
       padding-bottom: 0;
     }
     .assets__item {
@@ -62,7 +55,6 @@
   }
   @media screen and (min-width: 1200px) {
     .assets__index {
-      display: flex;
       flex-wrap: nowrap;
       padding: 94px 0;
       gap: 30px;

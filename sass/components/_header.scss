@@ -53,22 +53,18 @@
     flex-direction: column;
     gap: 10px;
   }
-  .mobile-menu-btn {
-    display: none;
-  }
-  }
-
+}
 @media screen and (min-width: 1200px) {
-.header__body {
-  padding-top: 13px;
-  padding-bottom: 0;
-}
-.header__contacts {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-.header__link {
-  padding: 25px;
+  .header__body {
+    padding-top: 13px;
+    padding-bottom: 0;
+  }
+  .header__contacts {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header__link {
+    padding: 25px;
   }
 }

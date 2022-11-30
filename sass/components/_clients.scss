@@ -10,14 +10,16 @@
   }
   .clients__accent .clients__icon {
     fill: $iconC;
-    transition: fill, transform;
-    transition-duration: 1s; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill $trans;
 
     // .clients__icon
     & {
       width: 100%;
     }
+  }
+  .clients__link:hover .clients__icon,
+  .clients__link:focus .clients__icon {
+    fill: $accentC;
   }
   .clients__link {
     display: flex;
@@ -26,25 +28,19 @@
     width: 100%;
     border: 1px solid $iconC;
     border-radius: 4px;
-    transition-property: border-color, transform;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: border-color $trans;
+
     &:hover,
     &:focus {
       border-color: $accentC;
-      transform: scale(1.1);
     }
   }
   .clients__item {
     display: flex;
-    // flex-basis: calc((100% - 30px)/2);
     justify-content: center;
+    // flex-basis: calc((100% - 30px)/2);
   }
-  .clients__link:hover .clients__icon,
-  .clients__link:focus .clients__icon {
-    fill: $accentC;
-  }
+
   @media screen and (min-width: 768px) {
     // .clients__item {
     //   // flex-basis: calc((100% - 60px)/3);
@@ -61,6 +57,22 @@
       grid-template-columns: repeat(6, 1fr);
       // display: flex;
       // flex-wrap: nowrap; 
+    }
+    .clients__accent .clients__icon {
+      transition: fill, transform;
+      transition-duration: 1s; 
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .clients__link {
+      transition-property: border-color, transform;
+      transition-duration: 1s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        border-color: $accentC;
+        transform: scale(1.1);
+      }
     }
   }
   

@@ -31,11 +31,10 @@
   .modal-window__icon {
     transition: fill $trans;
   }
-
   @media screen and (min-width: 1200px) {
     .modal-window {
-    max-width: 528px;
-    width: 100%;
+      max-width: 528px;
+      width: 100%;
     }
   }
   

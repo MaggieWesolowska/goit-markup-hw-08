@@ -1,3 +1,7 @@
+.modal-checkbox {
+  display: flex;
+  align-items: flex-start;
+}
 .modal-checkbox__box {
   display: flex;
   align-items: center;
@@ -22,8 +26,4 @@
 .modal-checkbox__input:checked + .modal-checkbox__box {
   background-color: $accentC;
   border-color: $accentC;
-}
-.modal-checkbox {
-  display: flex;
-  align-items: flex-start;
 }

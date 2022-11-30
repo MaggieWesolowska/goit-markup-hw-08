@@ -1,3 +1,7 @@
+.footer-tabs {
+  display: flex;
+  flex-direction: column;
+}
 .footer-tabs__title {
   color: #fff;
   display: flex;
@@ -10,38 +14,32 @@
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.footer-tabs {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-tabs__link {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  transition: transform 1s ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
 }
 @media screen and (min-width: 768px) {
   .footer-tabs {
     display: flex;
-
   }
   .footer-tabs__title {
     padding-top: 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .footer-tabs__title {
     display: block;
     padding-top: 10px;
   }
   .footer-tabs {
-    display: flex;
     padding-left: 70px;
+  }
+  .footer-tabs__link {
+    transition: transform 1s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 }

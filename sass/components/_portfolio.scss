@@ -66,7 +66,6 @@
     transition: transform $trans;
     transform: translateY(101%);
   }
-
   @media screen and (min-width: 768px) {
     .portfolio__gallery {
       flex-direction: row;
@@ -83,6 +82,5 @@
     }
     .portfolio__item {
       flex-basis: calc((100% - 30px * 3) / 3);
-      display: block;
       }
   }

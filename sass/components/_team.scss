@@ -41,14 +41,7 @@
   height: auto;
   display: block;
   object-fit: cover;
-  transition: transform 1s ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
 }
-
 @media screen and (min-width: 768px) {
  .team__gallery {
   flex-basis: calc((100% - 30px)/2);
@@ -59,7 +52,12 @@
   .team {
     padding: 94px 0;
   }
- .team__subtitle {
-  padding-bottom: 18px;
- }
+  .team__image {
+    transition: transform 1s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
 }

@@ -17,6 +17,7 @@
   pointer-events: initial;
   visibility: visible;
 }
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -118,6 +119,9 @@
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-btn {
     display: none;
   }
 }
